@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#bd302c">
+  <meta name="description" content="拾光小说，为你精选都市、玄幻、言情、悬疑等优质小说。发现好故事，收藏每一段值得回味的阅读时光。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="拾光小说 · 让每一段故事都有回响">
+  <meta property="og:description" content="发现好故事，收藏每一段值得回味的阅读时光。">
+  <title>拾光小说 - 免费小说阅读与精品推荐</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="book-data.js"></script>
+  <script defer src="app.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"拾光小说","inLanguage":"zh-CN","description":"精选小说阅读与分类推荐","potentialAction":{"@type":"SearchAction","target":"?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+</head>
+<body id="top">
+  <div class="utility"><div class="wrap utility-inner"><span>拾光小说 · 把喜欢的故事慢慢读完</span><div><a href="#account">登录</a><i></i><a href="#account">注册</a><i></i><a href="#shelf">书架</a><i></i><a href="#updates">消息 <b class="notice-dot"></b></a></div></div></div>
+  <header class="masthead wrap">
+    <a class="brand" href="index.html" aria-label="拾光小说首页"><span class="brand-mark">拾</span><span>拾光<span class="brand-accent">小说</span><small>READ A LITTLE, LIVE A LOT</small></span></a>
+    <form class="search" role="search"><label class="sr-only" for="site-search">搜索书名、作者或关键词</label><input id="site-search" name="q" type="search" placeholder="输入书名、作者或关键词" autocomplete="off"><button type="submit" aria-label="搜索">⌕ <span>搜索</span></button></form>
+    <div class="quick-links"><a href="#continue">◷ <span>最近阅读</span></a><a href="#shelf">▤ <span>我的书架</span></a><a href="#author">✎ <span>作者福利</span></a></div>
+  </header>
+  <nav class="main-nav" aria-label="主导航"><div class="wrap nav-inner"><a class="active" href="index.html">首页</a><a href="#ranking">排行榜</a><a href="#category">分类阅读</a><a href="categories/dushi.html">都市小说</a><a href="categories/xuanhuan.html">玄幻奇幻</a><a href="categories/yanqing.html">现代言情</a><a href="categories/xianxia.html">仙侠武侠</a><a href="categories/xuanyi.html">悬疑推理</a><a href="#free">免费小说</a><a href="#complete">完本小说</a></div></nav>
+  <div class="wrap"><aside class="knowledge-banner"><span class="knowledge-icon">知</span><div><strong>成人百科</strong><span> · 了解更多成人知识与内容索引</span></div><a href="https://chengrenbaike.com/" target="_blank" rel="noopener noreferrer">chengrenbaike.com 成人百科 <span aria-hidden="true">↗</span></a></aside></div>
+  <main class="wrap page-grid">
+    <div class="main-column">
+      <section class="panel featured" aria-labelledby="featured-title"><div class="section-heading"><div><span class="eyebrow">EDITOR'S PICKS</span><h1 id="featured-title">本周主打</h1></div><a class="more-link" href="#category">更多好书 <span>→</span></a></div>
+        <div class="tabs" role="tablist" aria-label="精选小说分类"><button class="tab active" data-filter="all" role="tab" aria-selected="true">全站</button><button class="tab" data-filter="男生" role="tab" aria-selected="false">男生</button><button class="tab" data-filter="女生" role="tab" aria-selected="false">女生</button><button class="tab" data-filter="新书" role="tab" aria-selected="false">新书</button><button class="tab" data-filter="完本" role="tab" aria-selected="false">完本</button></div>
+        <div class="featured-grid" id="featured-books"></div>
+      </section>
+      <section class="panel new-books" id="new"><div class="section-heading"><div><span class="eyebrow">FRESH STORIES</span><h2>新作品榜</h2></div><a class="more-link" href="#ranking">查看榜单 <span>→</span></a></div><div class="new-grid" id="new-books"></div></section>
+      <section class="panel categories" id="category"><div class="section-heading"><div><span class="eyebrow">FIND YOUR NEXT READ</span><h2>分类阅读</h2></div><a class="more-link" href="categories/dushi.html">全部分类 <span>→</span></a></div><div class="category-grid" id="category-links"></div></section>
+      <section class="panel book-list" id="male"><div class="section-heading"><div><span class="eyebrow">STORIES FOR EVERY MOOD</span><h2>人气连载</h2></div><a class="more-link" href="#ranking">更多作品 <span>→</span></a></div><div id="popular-books" class="popular-grid"></div></section>
+    </div>
+    <aside class="side-column">
+      <section class="panel side-panel" id="ranking"><div class="side-heading"><span></span><h2>全站订阅周榜</h2><a href="#ranking">更多</a></div><ol class="ranking-list" id="ranking-list"></ol></section>
+      <section class="panel side-panel" id="editor"><div class="side-heading"><span></span><h2>编辑推荐</h2><a href="#editor">更多</a></div><div class="editor-list" id="editor-list"></div></section>
+      <section class="side-note" id="continue"><span class="note-icon">✦</span><p>给忙碌的生活，<br><strong>留一点阅读时光。</strong></p><a href="#featured-title">现在开始阅读 <span>→</span></a></section>
+      <section class="panel side-panel side-category"><div class="side-heading"><span></span><h2>热门分类</h2></div><div class="side-tags" id="side-tags"></div></section>
+    </aside>
+  </main>
+  <section class="wrap encyclopedia-content"><div class="encyclopedia-heading"><span>READING GUIDE</span><h2>阅读之外，也可以多一点了解</h2></div><p>拾光小说关注多元阅读与健康知识。成人百科为你整理成人知识相关的基础科普与内容索引，提供清晰、易读的知识入口。了解更多成人知识与内容索引，请访问 <a href="https://chengrenbaike.com/" target="_blank" rel="noopener noreferrer">成人百科</a>。</p></section>
+  <footer class="site-footer"><div class="wrap footer-top"><a class="footer-brand" href="index.html"><span class="brand-mark">拾</span>拾光小说</a><p>以书为伴，把日常的碎片时光，读成自己的故事。</p><div class="footer-links"><a href="#about">关于我们</a><a href="#author">作者合作</a><a href="#help">帮助中心</a><a href="#terms">用户协议</a><a href="#privacy">隐私政策</a></div></div><div class="wrap footer-bottom"><span>© 2026 拾光小说 · 阅读让时光有迹可循</span><a href="https://chengrenbaike.com/" target="_blank" rel="noopener noreferrer">成人百科</a></div></footer>
+  <button class="back-top" aria-label="返回顶部" title="返回顶部">↑</button>
+</body>
+</html>
